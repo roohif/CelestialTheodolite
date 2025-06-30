@@ -1,0 +1,213 @@
+// Apparent Angles from Stellarium
+
+// Checking atmosphere
+if (LandscapeMgr.getFlagAtmosphere() != true) {
+	core.debug("Atmosphere setting (F4) is wrong, expected: true")
+	quit()
+}
+
+// Pause the clock
+core.setTimeRate(0)
+
+// Clearing the output
+core.resetOutput()
+
+core.setObserverLocation(-104.495255, 38.998955, 2075, "Heffron", "Earth")
+core.wait(0.5)
+
+core.setDate("2025-01-28T01:43:07", spec="utc")
+core.wait(0.25)
+core.output("2025-01-28T01:43:07" + "," + core.getObjectInfo("39 Aqr")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-01-28T02:31:40", spec="utc")
+core.wait(0.25)
+core.output("2025-01-28T02:31:40" + "," + core.getObjectInfo("HD 217533")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-01-31T01:31:22", spec="utc")
+core.wait(0.25)
+core.output("2025-01-31T01:31:22" + "," + core.getObjectInfo("39 Aqr")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-01-31T01:36:02", spec="utc")
+core.wait(0.25)
+core.output("2025-01-31T01:36:02" + "," + core.getObjectInfo("HD 211410")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-01-31T02:19:19", spec="utc")
+core.wait(0.25)
+core.output("2025-01-31T02:19:19" + "," + core.getObjectInfo("HD 217429")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-01-31T02:21:19", spec="utc")
+core.wait(0.25)
+core.output("2025-01-31T02:21:19" + "," + core.getObjectInfo("HD 217721")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-01-31T02:52:44", spec="utc")
+core.wait(0.25)
+core.output("2025-01-31T02:52:44" + "," + core.getObjectInfo("HD 221665")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-01-31T02:58:27", spec="utc")
+core.wait(0.25)
+core.output("2025-01-31T02:58:27" + "," + core.getObjectInfo("102 Aqr")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-01-31T03:08:28", spec="utc")
+core.wait(0.25)
+core.output("2025-01-31T03:08:28" + "," + core.getObjectInfo("HD 223559")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-01-31T03:10:51", spec="utc")
+core.wait(0.25)
+core.output("2025-01-31T03:10:51" + "," + core.getObjectInfo("HD 223774")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-01-31T03:45:31", spec="utc")
+core.wait(0.25)
+core.output("2025-01-31T03:45:31" + "," + core.getObjectInfo("HD 2345")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-02-01T01:27:25", spec="utc")
+core.wait(0.25)
+core.output("2025-02-01T01:27:25" + "," + core.getObjectInfo("39 Aqr")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-02-01T02:13:47", spec="utc")
+core.wait(0.25)
+core.output("2025-02-01T02:13:47" + "," + core.getObjectInfo("TYC 5826-746-1")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-02-01T02:15:57", spec="utc")
+core.wait(0.25)
+core.output("2025-02-01T02:15:57" + "," + core.getObjectInfo("HD 217533")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-02-01T02:54:23", spec="utc")
+core.wait(0.25)
+core.output("2025-02-01T02:54:23" + "," + core.getObjectInfo("102 Aqr")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-02-01T03:04:33", spec="utc")
+core.wait(0.25)
+core.output("2025-02-01T03:04:33" + "," + core.getObjectInfo("HD 223559")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-02-01T03:06:57", spec="utc")
+core.wait(0.25)
+core.output("2025-02-01T03:06:57" + "," + core.getObjectInfo("HD 223774")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-02-08T02:06:56", spec="utc")
+core.wait(0.25)
+core.output("2025-02-08T02:06:56" + "," + core.getObjectInfo("LP Aqr")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-02-08T02:20:24", spec="utc")
+core.wait(0.25)
+core.output("2025-02-08T02:20:24" + "," + core.getObjectInfo("HD 216718")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-02-08T03:52:00", spec="utc")
+core.wait(0.25)
+core.output("2025-02-08T03:52:00" + "," + core.getObjectInfo("HD 2324")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-02-08T04:15:52", spec="utc")
+core.wait(0.25)
+core.output("2025-02-08T04:15:52" + "," + core.getObjectInfo("HD 4915")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-02-08T04:28:20", spec="utc")
+core.wait(0.25)
+core.output("2025-02-08T04:28:20" + "," + core.getObjectInfo("25 Cet")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-02-08T04:39:00", spec="utc")
+core.wait(0.25)
+core.output("2025-02-08T04:39:00" + "," + core.getObjectInfo("HD 7449")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-03-10T02:01:14", spec="utc")
+core.wait(0.25)
+core.output("2025-03-10T02:01:14" + "," + core.getObjectInfo("HD 13709")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-03-10T02:28:42", spec="utc")
+core.wait(0.25)
+core.output("2025-03-10T02:28:42" + "," + core.getObjectInfo("HD 16733")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-03-10T02:39:43", spec="utc")
+core.wait(0.25)
+core.output("2025-03-10T02:39:43" + "," + core.getObjectInfo("HD 17926")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-03-10T03:22:11", spec="utc")
+core.wait(0.25)
+core.output("2025-03-10T03:22:11" + "," + core.getObjectInfo("HD 22248")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-03-10T03:38:29", spec="utc")
+core.wait(0.25)
+core.output("2025-03-10T03:38:29" + "," + core.getObjectInfo("HD 24267")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-03-10T03:49:34", spec="utc")
+core.wait(0.25)
+core.output("2025-03-10T03:49:34" + "," + core.getObjectInfo("HD 25371")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-03-11T02:51:26", spec="utc")
+core.wait(0.25)
+core.output("2025-03-11T02:51:26" + "," + core.getObjectInfo("HD 17320")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-03-11T03:00:52", spec="utc")
+core.wait(0.25)
+core.output("2025-03-11T03:00:52" + "," + core.getObjectInfo("HD 18290")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-03-13T04:32:54", spec="utc")
+core.wait(0.25)
+core.output("2025-03-13T04:32:54" + "," + core.getObjectInfo("HD 32515")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-03-13T04:34:43", spec="utc")
+core.wait(0.25)
+core.output("2025-03-13T04:34:43" + "," + core.getObjectInfo("HD 32489")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-03-13T05:28:21", spec="utc")
+core.wait(0.25)
+core.output("2025-03-13T05:28:21" + "," + core.getObjectInfo("HD 40248")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-03-15T04:02:58", spec="utc")
+core.wait(0.25)
+core.output("2025-03-15T04:02:58" + "," + core.getObjectInfo("HD 28388")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-03-15T05:29:28", spec="utc")
+core.wait(0.25)
+core.output("2025-03-15T05:29:28" + "," + core.getObjectInfo("HD 39891")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-03-15T05:33:45", spec="utc")
+core.wait(0.25)
+core.output("2025-03-15T05:33:45" + "," + core.getObjectInfo("HD 40555")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-03-17T02:40:25", spec="utc")
+core.wait(0.25)
+core.output("2025-03-17T02:40:25" + "," + core.getObjectInfo("HD 35182")["altitude"])
+core.wait(0.25)
+
+core.setDate("2025-03-17T02:50:02", spec="utc")
+core.wait(0.25)
+core.output("2025-03-17T02:50:02" + "," + core.getObjectInfo("HD 36889")["altitude"])
+core.wait(0.25)
+
+core.saveOutputAs("globeApparent.csv")
